@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState, useEffect } from "react/cjs/react.development";
 import { SApp, SHeader, SSidebar, SMain } from "../styles/styles";
 
@@ -12,10 +13,17 @@ export default function Home() {
   });
 
   return (
-    <SApp>
-      <SHeader>Let's Cook</SHeader>
-      <SSidebar>sidebar</SSidebar>
-      <SMain>{message}</SMain>
-    </SApp>
+    <>
+      <Head>
+        <title>Let's Cook!</title>
+      </Head>
+      <SApp>
+        <SHeader>Let's Cook</SHeader>
+        <SSidebar>sidebar</SSidebar>
+        <SMain>
+          <div>{message}</div>
+        </SMain>
+      </SApp>
+    </>
   );
 }

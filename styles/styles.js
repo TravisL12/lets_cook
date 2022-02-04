@@ -4,7 +4,7 @@ import styled from "styled-components";
 const appBg = "white";
 const borderColor = "lightgray";
 
-const SectionShared = styled.div`
+const Box = styled.div`
   padding: 10px;
 `;
 
@@ -16,18 +16,18 @@ export const SApp = styled.div`
   height: 100vh;
 `;
 
-export const SMain = styled(SectionShared)`
+export const SMain = styled(Box)`
   grid-column: 2;
   grid-row: 2;
 `;
 
-export const SSidebar = styled(SectionShared)`
+export const SSidebar = styled(Box)`
   border-right: 1px solid ${borderColor};
   grid-column: 1;
   grid-row: 2;
 `;
 
-export const SHeader = styled(SectionShared)`
+export const SHeader = styled(Box)`
   border-bottom: 1px solid ${borderColor};
   grid-column: 1 / 3;
   grid-row: 1;
