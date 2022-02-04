@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState, useEffect } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 import { SApp, SHeader, SSidebar, SMain } from "../styles/styles";
 
 export default function Home() {
